@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #051b36;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg (1) (1).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: rgb(15, 15, 15);
+    position: relative;
+    overflow: hidden; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    background-color: rgba(255, 255, 255, 0.021);
+    backdrop-filter: blur(110px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-brand span {
+    font-size: 25px;
+}
+
+.nav-link {
+    color: #eee;
+    text-decoration: none; /* Ensure no default underline */
+    position: relative; /* For positioning the pseudo-element */
+    padding: 5px 0; /* Optional: add some vertical padding */
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust this value as needed */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+nav a{
+    margin: 10px;
+}
+
+.nav-link:hover{
+    color: #eee;
+}
+.main-container {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.2) contrast(1.5) sepia(0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 20px; /* Adjust the value as needed */
+}
+
+.container h1 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 160px;
+    color: #eee;
+    position: absolute;
+    top: -180px;
+}
+
+.container h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 80px; 
+    color: #000000;
+    font-weight: 900;
+    position: absolute;
+    top: -50px;
+    z-index: 999;
+}
+
+.container span {
+    font-size: 100px;
+}
+
+.container h3 {
+    font-size: 160px;
+    font-family: "Shrikhand", serif;
+    position: absolute;
+    top: -23px;
+}
+
+.container p {
+    position: absolute;
+    bottom: -190px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*LATEST BLOG*/
+center h1 {
+    font-size: 30px;
+    font-family: "Shrikhand", serif;
+    color: #eee;
+}
+
+.card-fixed-height {
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensures content does not overflow the card */
+}
+.card-fixed-height {
+    height: 450px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px; /* Adjust the value as needed */
+}
+
+.card-img-top {
+    height: 300px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card-img-top:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+.gap{
+    margin-top: 30px;
+}
+
+
+
+
+
+.event-feedback{
+    margin: auto;
+}
+
+.event-feedback1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.feedback-fixed-height{
+    background-color: violet;
+position: relative;
+} 
+
+.feedback-fixed-height h2{
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+.event{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    margin-left: -7px;
+}
+
+.event-fixed-height {
+
+    height: 500px;
+    width: 1000px;
+}
+.feedback-fixed-height {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    height: 500px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.feedback-form input, 
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.feedback-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
